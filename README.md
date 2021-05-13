@@ -10,7 +10,7 @@
 ## Project's design methodology
 &nbsp;&nbsp;&nbsp;&nbsp;In my project, the most important part of this design is taking and processing proper inputs. I take inputs from the vibration sensor every 1ms. However, 1ms is a very short time-lapse compare to the time between every knock. So, I decided to check time intervals of every 256 ms, not 1 ms. To do that I create a very long vector which is “samples”. Although it can be applied with different values for different hardware equipment, I create this vector as 256*6 = 1536 bites to fit the restriction of BASYS (e.g number of LEDs, etc.). In this equation, 256 represents the time interval and 6 represents the number of LEDs which can be also called memory.
 
-> __Sample length (1536) = bit length (256) * sequence length (6)__
+ _Sample length (1536) = bit length (256) * sequence length (6)_
 
 &nbsp;&nbsp;&nbsp;&nbsp; My program checks the 256 digits of the sample vector. If there is at least one ‘1’, the corresponding digit of the sequence will be ‘1’.
 
