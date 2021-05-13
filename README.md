@@ -15,6 +15,8 @@
 &nbsp;&nbsp;&nbsp;&nbsp; My program checks the 256 digits of the sample vector. If there is at least one ‘1’, the corresponding digit of the sequence will be ‘1’.
 
 &nbsp;&nbsp;&nbsp;&nbsp; In the memory part, I determine a push button to assign a password if the system is in “unlocked” condition. If the system is in unlock condition and the push button has been pressed, the sequence at that moment will be assigned a password. Also, I assigned another push button to make the system “locked” if the condition is “unlocked”
+
+
 ![Figure-1][logo1]
 
 &nbsp;&nbsp;&nbsp;&nbsp;As can be observed in the figure, the first 6 LEDs from the right side show a sequence vector whose inputs have taken for 1536 ms. The next 6 LEDs show the password vector. The next LED shows the clock whose frequency is 256 ms and the next LED shows that whether the system is locked (0) or unlocked (1). 
